@@ -44,9 +44,9 @@
 - [第 2 章：训练你的第一个神经网络](https://duandalei.github.io/NN-Zero-To-Hero-CN/#/./book/2.训练你的第一个神经网络.md)
 - [第 3 章：二元字符语言模型](https://duandalei.github.io/NN-Zero-To-Hero-CN/#/./book/3.二元字符语言模型.md)
 - [第 4 章：多层感知机语言模型](https://duandalei.github.io/NN-Zero-To-Hero-CN/#/./book/4.多层感知机语言模型.md)
-- 第 5 章：[激活值、梯度与批归一化](https://duandalei.github.io/NN-Zero-To-Hero-CN/#/./book/5.激活值梯度与批归一化.md)
-- 第 6 章：[手写反向传播](https://duandalei.github.io/NN-Zero-To-Hero-CN/#/./book/6.手写反向传播.md)
-- 第 7 章：[WaveNet 式卷积语言模型](https://duandalei.github.io/NN-Zero-To-Hero-CN/#/./book/7.WaveNet式卷积语言模型.md)
+- [第 5 章：激活值、梯度与批归一化](https://duandalei.github.io/NN-Zero-To-Hero-CN/#/./book/5.激活值梯度与批归一化.md)
+- [第 6 章：手写反向传播](https://duandalei.github.io/NN-Zero-To-Hero-CN/#/./book/6.手写反向传播.md)
+- [第 7 章：WaveNet 式卷积语言模型](https://duandalei.github.io/NN-Zero-To-Hero-CN/#/./book/7.WaveNet式卷积语言模型.md)
 
 ## 本地预览
 
