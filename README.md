@@ -25,18 +25,18 @@
 学习路线是一条清晰的上升曲线：
 
 1. **micrograd（第 1–2 章）**：从标量自动微分出发，手写一个能训练的小型神经网络，理解反向传播的本质。
-2. **makemore（第 3–7 章）**：从字符级二元语言模型开始，逐步加入嵌入、多层感知机、批归一化、手写反向传播和卷积结构，最终抵达 GPT 的前夜。
+2. **makemore（第 3–7 章）**：从字符级二元语言模型开始，逐步加入嵌入、多层感知机、批归一化、手写反向传播和卷积结构，最终抵达 GPT 前夜。
 
 ## 项目结构
 
 | 目录 | 说明 |
 | ---- | ---- |
 | `book/` | 中文正文，每章一个 Markdown 文件 |
-| `Image/` | 从原 notebook 输出中提取的图表（matplotlib PNG 与计算图 SVG） |
+| `Image/` | 由本书代码生成的图表（计算图、计数矩阵、训练曲线与诊断图） |
 | `index.html` | docsify 配置，负责把 Markdown 渲染成网页 |
 | `_sidebar.md` | 侧边栏目录 |
 
-本站使用 [docsify](https://docsify.js.org/) 构建，配合 GitHub Pages 即可实现类似 GitBook 的在线阅读体验：侧边栏目录、上下章分页、KaTeX 公式、代码复制和字数统计。
+本站使用 [docsify](https://docsify.js.org/) 构建，通过 GitHub Pages 提供类似 GitBook 的在线阅读体验：侧边栏目录、上下章分页、KaTeX 公式、代码复制和字数统计。
 
 ## 在线阅读章节
 
@@ -47,6 +47,18 @@
 - [第 5 章：激活值、梯度与批归一化](https://duandalei.github.io/NN-Zero-To-Hero-CN/#/./book/5.激活值梯度与批归一化.md)
 - [第 6 章：手写反向传播](https://duandalei.github.io/NN-Zero-To-Hero-CN/#/./book/6.手写反向传播.md)
 - [第 7 章：WaveNet 式卷积语言模型](https://duandalei.github.io/NN-Zero-To-Hero-CN/#/./book/7.WaveNet式卷积语言模型.md)
+
+## 运行书中代码
+
+需要 Python 3.10+ 和以下依赖：
+
+```bash
+pip install torch numpy matplotlib
+# 可选：绘制第 1、2 章的计算图
+pip install graphviz
+```
+
+PyTorch 安装请参考 [官方指南](https://pytorch.org/get-started/locally/) 选择 CPU 或 GPU 版本。`graphviz` 只用于计算图可视化；Windows 用户还需要安装 Graphviz 软件，并把它的 `bin` 目录加入 PATH。
 
 ## 本地预览
 
@@ -74,19 +86,20 @@ docsify serve .
 
 ## 代码与输出验证
 
-书中所有代码输出均经过实际运行验证，而不是从原 notebook 直接转抄。主要验证环境：
+书中的代码以原 notebook 为原型，按书的叙述重新组织、改写和补充；所有代码输出均重新运行验证，而不是从原 notebook 直接转抄。主要验证环境：
 
 | 组件 | 版本 |
 | ---- | ---- |
 | Python | 3.12.16 |
 | PyTorch | 2.14.1 |
 | NumPy | 2.5.5 |
-| tiktoken | 0.14.0 |
+| Matplotlib | 3.11.2 |
 
 原 notebook 中的部分输出是 Jupyter 会话的历史状态（例如重复执行过训练单元），与从干净环境重新运行的结果不同。本书以实测结果为准，并在相关位置说明差异。
 
 ## 说明
 
++ 书中的代码不是 notebook 的逐字复制；原 notebook 是原型，本书为教学需要做了整理、重排和补充。
 + 原 notebook 基于特定版本的 PyTorch 与 NumPy，个别输出可能随版本变化；本书展示的是上表环境下实测的输出。
 + 本书不逐句翻译视频，而是围绕代码组织讲解，并补充必要的数学背景与工程细节。
 + 欢迎通过 Issue 指出错误或提出改进建议。
