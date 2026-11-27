@@ -65,12 +65,12 @@ docsify serve .
 
 ## 原课程与致谢
 
-+ 课程主页：[karpathy/nn-zero-to-hero](https://github.com/karpathy/nn-zero-to-hero)
++ 课程仓库（本书代码的主要来源）：[karpathy/nn-zero-to-hero](https://github.com/karpathy/nn-zero-to-hero)，具体为 `lectures/micrograd` 与 `lectures/makemore` 下的 notebook
 + 视频播放列表：YouTube 上的 [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
-+ micrograd：[karpathy/micrograd](https://github.com/karpathy/micrograd)
-+ makemore：[karpathy/makemore](https://github.com/karpathy/makemore)
++ micrograd 独立项目：[karpathy/micrograd](https://github.com/karpathy/micrograd)，课程的配套实现，本书未直接引用其仓库代码
++ makemore 独立项目：[karpathy/makemore](https://github.com/karpathy/makemore)，同上
 
-本书正文为原创中文讲解；书中的代码示例来自上述以 MIT 许可证发布的课程仓库，版权归 Andrej Karpathy 所有，详见 [LICENSE](./LICENSE)。
+本书正文为原创中文讲解；书中的代码示例取自 `nn-zero-to-hero` 仓库的讲座 notebook，该仓库以 MIT 许可证发布，版权归 Andrej Karpathy 所有，详见 [LICENSE](./LICENSE)。
 
 ## 代码与输出验证
 
