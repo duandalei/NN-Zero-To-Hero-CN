@@ -4,7 +4,7 @@
 
 原课程的讲解主要存在于视频中，仓库里的 notebook 几乎只有可运行的代码；本书的目标是把每个 notebook 里的代码**拆开、讲透**：每一步为什么这样写、张量形状如何变化、梯度从哪里来、输出说明了什么。你可以把它当作课程的配套读物，边看代码边读，也可以脱离视频独立学习。
 
-在线阅读（部署 GitHub Pages 后）：
+在线阅读：
 
 **https://duandalei.github.io/NN-Zero-To-Hero-CN/**
 
@@ -78,7 +78,7 @@ docsify serve .
 
 | 组件 | 版本 |
 | ---- | ---- |
-| Python | 3.12.16（Anaconda `AI` 环境） |
+| Python | 3.12.16 |
 | PyTorch | 2.14.1 |
 | NumPy | 2.5.5 |
 | tiktoken | 0.14.0 |
